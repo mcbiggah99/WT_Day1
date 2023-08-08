@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Tag styling */
+        p {
+            color:aqua;
+            font-size:140%;
+        }
+        span {
+            font-size:150%;
+        }
+
+        /* Id styling */
+        #paragraaf_1{
+            color:brown;
+            font-size:120%;
+        }
+
+        .tables{
+            background-color: aquamarine;
+        }
+
+        button {
+            color:orangered;
+            background-color: blueviolet;
+        }
+        button:hover {
+            color:orangered;
+            background-color: rgb(156, 66, 240);
+        }
+    </style>
+
+    <script>
+        let a = 6; // Number
+        let b = "oyagilagileh"; // String
+        let c = true; // Boolean
+        // let abc; // Declaration
+        // abc = 12; // Assignment
+        let abc = 12; // Initialization
+
+        console.log('De waarde van a is ' + a);
+
+        let g1 = 2;
+        let g2 = 6.5;
+        let g3 = 4;
+        let g4 = 3.14;
+
+        let g5 = g1 + g2; // + - / *
+        let g6 = g1 / g4;
+
+        g1 += 3
+        g1++
+
+        function sum() {
+            let g1Invoer = parseFloat(document.getElementById('getal1').value)
+            let g2Invoer = parseFloat(document.getElementById('getal2').value)
+            let var_out = g1Invoer + g2Invoer;
+            alert(var_out);
+            return var_out;
+        }
+
+        function subtract() {
+            let g1Invoer = parseFloat(document.getElementById('getal1').value)
+            let g2Invoer = parseFloat(document.getElementById('getal2').value)
+            let var_out = g1Invoer - g2Invoer;
+            alert(var_out);
+            return var_out;
+        }
+
+        function multiply() {
+            let g1Invoer = parseFloat(document.getElementById('getal1').value)
+            let g2Invoer = parseFloat(document.getElementById('getal2').value)
+            let var_out = g1Invoer * g2Invoer;
+            alert(var_out);
+            return var_out;
+        }
+
+        function divide() {
+            let g1Invoer = parseFloat(document.getElementById('getal1').value)
+            let g2Invoer = parseFloat(document.getElementById('getal2').value)
+            let var_out = g1Invoer / g2Invoer;
+            alert(var_out);
+            return var_out;
+        }
+
+        function printItems(arg1, arg2) {
+            console.log('Argument 1 = ' + arg1)
+            console.log('Argument 2 = ' + arg2)
+        }
+
+        printItems(12, "Test")
+
+    </script>
+</head>
+<body>
+    <h1>Mijn eerste pagina</h1>
+
+    <!-- Dit is een comment -->
+    <p id="paragraaf_1">Dit is een paragraaf</p>
+    <p>Dit is een 2de paragraaf</p>
+    <p>Dit is een 3de paragraaf</p>
+    <p>Dit is een 4de paragraaf</p>
+
+    <span style="color:rgb(179, 35, 177); font-size:12px;">Dit is span 1</span><span>Dit is span 2</span>
+    
+    <!-- ul is unordered list -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- ol is ordered list -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+    <!-- Table -->
+    <table class="tables">
+        <!-- Table kan meerdere rijen hebben -->
+        <tr>
+            <!-- Rij kan meerdere cellen hebben -->
+            <td>Cell 1A</td>
+            <td>Cell 2A</td>
+        </tr>
+        <tr>
+            <td>Cell 1B</td>
+            <td>Cell 2B</td>
+        </tr>
+    </table>
+    
+    <!-- Invoervelden -->
+    <input type="number" id="getal1" value="0">
+    <input type="number" id="getal2" value="0">
+    <button onclick="sum()">Sum</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    
+    <!-- High cohesion, low coupling -->
+
+    <p>
+    <img width="600" height="400" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg">
+    </p>
+</body>
+</html>
